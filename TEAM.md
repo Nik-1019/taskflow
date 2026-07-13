@@ -1,0 +1,11 @@
+# Engineering Team
+
+| Role | Name | Responsibilities | Ownership Areas | Sprint 1 Deliverables |
+|------|------|------------------|-----------------|-----------------------|
+| Engineering Manager | Alex Martinez | Oversees project timelines, coordinates team, removes blockers, ensures quality delivery | Overall project coordination, sprint planning, stakeholder communication | Project kickoff, sprint planning, initial architecture review, team onboarding |
+| Frontend Engineer | Samira Patel | Develops responsive UI components, implements state management, ensures accessibility | React frontend, UI component library, state management (Redux Toolkit), UI/UX implementation | Project setup, React app skeleton, basic layout components, task board UI prototype |
+| Backend Engineer | Javier Lopez | Designs and implements RESTful APIs, database models, authentication, business logic | FastAPI backend, API endpoints, database models, authentication service, business logic | Project setup, FastAPI app, user authentication API, task CRUD endpoints |
+| Cloud Engineer | Priya Sharma | Designs and manages cloud infrastructure, CI/CD pipelines, monitoring and logging | AWS infrastructure (ECS, RDS, S3, CloudFront), CI/CD pipelines, monitoring, DevOps | AWS account setup, VPC and security groups, RDS PostgreSQL instance, basic CI pipeline |
+| Data Engineer | Marco Rossi | Designs data pipelines, implements data models for analytics, implements AI/ML integrations | Data warehouse, ETL pipelines, AI model integration, analytics database | Data model design, ETL pipeline for task metrics, integration with OpenAI API for task suggestions |
+| QA Engineer | Fatima Al-Sayed | Develops test plans, creates automated tests, performs manual testing, ensures quality | Test strategy, automated test suite (frontend/backend), test data management, bug tracking | Test plan documentation, automated unit tests for backend API, basic frontend component tests |
+| Technical Writer | Elena Kovac | Creates documentation, user guides, API documentation, maintains knowledge base | User documentation, API docs, developer guides, release notes, knowledge base | Product overview documentation, API documentation draft, user guide draft, contribution guidelines |
