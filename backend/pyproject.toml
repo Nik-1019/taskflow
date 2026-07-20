@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taskflow-backend"
+version = "0.1.0"
+description = "TaskFlow AI-powered project management platform — FastAPI backend."
+requires-python = ">=3.9"
+# TODO: Populate runtime dependencies (see requirements.txt) and dev extras.
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_unused_configs = true
+ignore_missing_imports = true
+# TODO: Enable strict mode (disallow_untyped_defs = true) as the codebase matures.
+
+[tool.isort]
+profile = "black"

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# Node / frontend
+node_modules/
+dist/
+npm-debug.log*
+
+# Env / secrets — NEVER commit real secrets
+.env
+.env.local
+*.secret
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*

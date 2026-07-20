@@ -1,0 +1,10 @@
+# TaskFlow backend dependencies (pinned in Sprint 1).
+# TODO: Javier Lopez / Marco Rossi — finalize versions and add app dependencies.
+fastapi>=0.110,<0.111
+uvicorn[standard]>=0.29,<0.30
+pydantic>=2.6,<2.7
+pydantic-settings>=2.2,<2.3
+sqlalchemy>=2.0,<2.1
+alembic>=1.13,<1.14
+# TODO: Add async DB driver (asyncpg), Redis client (redis / aioredis),
+# TODO: Celery, python-jose / PyJWT for auth, httpx for OpenAI calls, etc.
