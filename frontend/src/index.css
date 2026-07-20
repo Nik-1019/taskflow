@@ -1,0 +1,5 @@
+/* TaskFlow frontend global styles.
+   TODO: Samira Patel — add theme overrides, MUI theme provider, global resets. */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
