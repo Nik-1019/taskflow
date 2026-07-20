@@ -8,11 +8,13 @@ from alembic import context
 # TODO: Import target_metadata from app models once defined.
 target_metadata = None
 
+
 def run_migrations_offline() -> None:
     # TODO: url = settings.DATABASE_URL
     context.configure(url="", target_metadata=target_metadata, literal_binds=True)
     with context.begin_transaction():
         context.run_migrations()
+
 
 def run_migrations_online() -> None:
     # TODO: connectable = create_async_engine(settings.DATABASE_URL)

@@ -1,0 +1,30 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend-lint:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: Set up Python, install deps, run black --check / flake8 / mypy.
+      - name: Placeholder
+        run: echo "TODO - backend lint steps (black/flake8/mypy) go here."
+
+  frontend-lint:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: Set up Node, npm install, run eslint and tsc --noEmit.
+      - name: Placeholder
+        run: echo "TODO - frontend lint steps (eslint/tsc) go here."
