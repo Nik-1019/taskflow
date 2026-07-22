@@ -1,32 +1,96 @@
 # TaskFlow Frontend
 
-React 18 + TypeScript single-page application for the TaskFlow platform.
+React-based frontend for TaskFlow, an AI-powered project management platform.
 
-## Ownership
-- **Samira Patel** — UI components, Redux state, routing, accessibility.
+## Tech Stack
 
-## Layout
-- `src/main.tsx` — entry point (mounts `<App />`; TODO: Redux + Router wiring).
-- `src/App.tsx` — scaffold shell rendering the TaskFlow heading (TODO: real UI).
-- `src/store.ts` — Redux Toolkit store placeholder (TODO: slices + RTK Query).
-- `src/index.css` — global styles placeholder.
-- `index.html` — Vite HTML entry.
-- `package.json`, `tsconfig.json`, `vite.config.ts`, `.eslintrc.cjs` — config.
-- `Dockerfile` — container image stub for ECS/Fargate.
-- `.env.example` — environment template (copy to `.env`, never commit secrets).
+- **React 18** with TypeScript
+- **Vite** for fast development and optimized builds
+- **Redux Toolkit** for state management
+- **Tailwind CSS** for styling
+- **Storybook** for component documentation
 
-## Run (skeleton)
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ and npm
+
+### Installation
+
 ```bash
+# Install dependencies
 npm install
-npm run dev
-# Opens on http://localhost:3000 rendering the TaskFlow heading.
 ```
 
-## What goes here (Sprint 1+)
-- Material-UI theme + layout components, task board UI prototype.
-- Redux Toolkit slices + RTK Query for API data fetching.
-- React Router routes, Socket.io-client real-time updates.
-- Integration with the backend `/api` and `/ws` endpoints.
+### Development
 
-> This directory is a **scaffold**. No feature UI, state, or API calls are
-> implemented yet beyond the placeholder heading.
+```bash
+# Start development server (http://localhost:3000)
+npm run dev
+
+# Run Storybook (http://localhost:6006)
+npm run storybook
+
+# Run linter
+npm run lint
+
+# Build for production
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+├── app/           # Redux store configuration
+├── components/    # Reusable UI components
+│   ├── board/     # Board, Column, TaskCard
+│   └── layout/    # AppLayout, Sidebar, TopBar
+├── features/      # Feature-specific components and logic
+├── hooks/         # Custom React hooks
+├── pages/         # Page-level components
+├── styles/        # Global styles and Tailwind config
+├── types/         # TypeScript type definitions
+└── utils/         # Utility functions
+```
+
+## Components
+
+### Layout Components
+- **AppLayout**: Main application layout with sidebar and top bar
+- **Sidebar**: Navigation sidebar with links to Board, Backlog, Reports, Settings
+- **TopBar**: Top navigation bar with workspace switcher, notifications, and user menu
+
+### Board Components
+- **Board**: Kanban board container with multiple columns
+- **Column**: Individual column (To Do, In Progress, Done)
+- **TaskCard**: Task card with title, description, priority badge, assignee, and due date
+
+## Features
+
+- ✅ React 18 + TypeScript + Vite setup
+- ✅ Redux Toolkit configured
+- ✅ Tailwind CSS with custom design tokens
+- ✅ Base layout components (AppLayout, Sidebar, TopBar)
+- ✅ Board components (Board, Column, TaskCard)
+- ✅ Storybook for component documentation
+- ✅ ESLint + Prettier configured
+- ✅ Accessible components with ARIA attributes
+
+## Next Steps (Sprint 2)
+
+- Connect to backend API
+- Implement authentication
+- Add drag-and-drop functionality
+- Real-time updates via WebSocket
+- Task creation and editing
+- User management
+
+## Contributing
+
+See [CONTRIBUTING.md](../CONTRIBUTING.md) for development guidelines.
+
+## License
+
+Proprietary - TaskFlow Team
