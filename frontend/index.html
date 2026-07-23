@@ -1,13 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TaskFlow - AI-Powered Project Management</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow - AI-Powered Project Management</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f7fa; padding: 2rem; }
+    h1 { color: #1a202c; margin-bottom: 2rem; font-size: 2rem; }
+    .board { display: flex; gap: 1.5rem; overflow-x: auto; }
+    .column { background: #fff; border-radius: 8px; padding: 1rem; min-width: 280px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .column h2 { font-size: 0.875rem; font-weight: 600; color: #4a5568; text-transform: uppercase; margin-bottom: 1rem; letter-spacing: 0.05em; }
+    .task { background: #fff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 0.875rem; margin-bottom: 0.75rem; }
+    .task h3 { font-size: 0.9375rem; color: #2d3748; margin-bottom: 0.5rem; }
+    .task p { font-size: 0.8125rem; color: #718096; margin-bottom: 0.5rem; }
+    .meta { display: flex; gap: 0.5rem; align-items: center; font-size: 0.75rem; }
+    .badge { padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500; }
+    .badge.high { background: #fed7d7; color: #c53030; }
+    .badge.medium { background: #feebc8; color: #c05621; }
+    .badge.low { background: #c6f6d5; color: #276749; }
+    .assignee { color: #4a5568; }
+  </style>
+</head>
+<body>
+  <h1>TaskFlow Board</h1>
+  <div class="board">
+    <div class="column">
+      <h2>To Do</h2>
+      <div class="task">
+        <h3>Design user authentication flow</h3>
+        <p>Create mockups for login and registration screens</p>
+        <div class="meta"><span class="badge high">High</span><span class="assignee">Samira Patel</span></div>
+      </div>
+      <div class="task">
+        <h3>Setup database schema</h3>
+        <p>Define tables for users, tasks, and workspaces</p>
+        <div class="meta"><span class="badge medium">Medium</span><span class="assignee">Javier Lopez</span></div>
+      </div>
+    </div>
+    <div class="column">
+      <h2>In Progress</h2>
+      <div class="task">
+        <h3>Build task board UI</h3>
+        <p>Implement drag-and-drop kanban board layout</p>
+        <div class="meta"><span class="badge high">High</span><span class="assignee">Samira Patel</span></div>
+      </div>
+    </div>
+    <div class="column">
+      <h2>Done</h2>
+      <div class="task">
+        <h3>Project kickoff meeting</h3>
+        <p>Align team on sprint goals and architecture</p>
+        <div class="meta"><span class="badge low">Low</span><span class="assignee">Engineering Manager</span></div>
+      </div>
+      <div class="task">
+        <h3>Setup React project scaffold</h3>
+        <p>Initialize Vite + TypeScript + ESLint configuration</p>
+        <div class="meta"><span class="badge medium">Medium</span><span class="assignee">Samira Patel</span></div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
